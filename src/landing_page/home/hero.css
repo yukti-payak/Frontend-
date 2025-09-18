@@ -1,0 +1,52 @@
+.herosection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heroImage {
+  max-width: 60%;
+  height: auto;
+}
+
+.title {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.85;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #555;
+}
+.signup-btn{
+  background-color: #387ED1;
+  color: white;
+}
+.signup-btn:hover{
+  background-color: black;
+  color:white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+.herosection{
+  min-height: 70vh;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+}
+
+  .text {
+    font-size: 1rem;
+  }
+
+ 
+}

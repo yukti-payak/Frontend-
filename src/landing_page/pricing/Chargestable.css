@@ -1,0 +1,94 @@
+.charges-container {
+    padding: 6rem;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-button.active {
+    color: #1976d2;
+    border-bottom: 3px solid #1976d2;
+    font-weight: bold;
+  }
+  
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .charges-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.65rem;
+     border: 1px solid #ddd;
+  }
+  
+  .charges-table th,
+  .charges-table td {
+    /* border: 1px solid #ddd; */
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .charges-table th {
+    background-color: #f4f4f4;
+    white-space: nowrap;
+  }
+  
+  .charges-table ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+  .pricing-para a{
+    text-decoration: none;
+
+  }
+  
+  
+  /* Responsive - Small screens */
+  @media (max-width: 600px) {
+    .tab-button {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  
+    .charges-table th,
+    .charges-table td {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+    }
+}
+
+.custom-border-only {
+  border: 1px solid #dee2e6; /* Bootstrap light gray */
+  border-collapse: collapse;
+}
+
+.custom-border-only th,
+.custom-border-only td {
+  border: none !important; /* Remove inner borders */
+}
+
+.custom-border-only thead th {
+  font-weight: normal; /* Make header text normal weight */
+}
+.tableBody td{
+  font-size: 12px;
+
+}
