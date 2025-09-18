@@ -15,7 +15,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
       <div className="container p-2">
         <a className="navbar-brand" href="/">
           <img
-            src="media/images/logo.svg"
+            src="media/images/logo1.svg"
             style={{ width: "25%" }}
             alt="Logo"
           />
