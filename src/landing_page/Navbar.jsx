@@ -70,7 +70,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  window.open('https://dashboard-mu-ten-63.vercel.app/', '_blank');
+                  window.open('https://dashboard-two-murex-20.vercel.app/', '_blank');
                 }}
               >
                 Dashboard
