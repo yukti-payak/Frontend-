@@ -123,6 +123,19 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
             <img style={{ width: "150px" }} alt="logo" src="/media/images/logo1.svg"/>
           </Link>
 
+          {/* Hamburger Toggle Button for Mobile */}
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav text-center">
               <li className="nav-item mx-2">
