@@ -4,27 +4,27 @@ function Footer() {
     <footer style={{ backgroundColor: "#F2F1EF" }}>
       <div className="container p-5 border-top ">
         <div className="row">
-          <div className="col px-5 ">
-            <img
-              src="media/images/logo.svg"
-              style={{ width: "50%" }}
-              alt="logo"
-            />{" "}
-            <br /> <br />
-            <p className=" main-para">© 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
-            <div className="footer-icons">
-              <i className="fa-brands fa-x-twitter"></i>
-              <i className="fa-brands fa-square-facebook"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-linkedin-in"></i>
-            </div>
-            <hr />
-            <div className="footer-icons">
-              <i className="fa-brands fa-youtube"></i>
-              <i className="fa-brands fa-whatsapp"></i>
-              <i className="fa-brands fa-telegram"></i>
-            </div>
+        <div className="col px-5 ">
+          <img
+            src="media/images/logo.svg"
+            style={{ width: "50%" }}
+            alt="logo"
+          />
+          <br /> <br />
+          <p className="main-para">© 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
+          <div className="footer-icons">
+            <i className="fa-brands fa-x-twitter"></i>
+            <i className="fa-brands fa-square-facebook"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </div>
+          <hr />
+          <div className="footer-icons">
+            <i className="fa-brands fa-youtube"></i>
+            <i className="fa-brands fa-whatsapp"></i>
+            <i className="fa-brands fa-telegram"></i>
+          </div>
+        </div>
           <div className="col ">
             Company <br />
             <a href="">About</a>
