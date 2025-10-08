@@ -151,7 +151,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
                 <Link className="nav-link" to="/support">Support</Link>
               </li>
 
-              <li className="nav-item mx-2">
+              <li className="nav-item mx-2 my-2">
                 <button className="btn btn-primary" onClick={handleDashboardClick}>
                   Dashboard
                 </button>
@@ -159,19 +159,19 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
 
               {token && user ? (
                 <>
-                  <li className="nav-item mx-2 d-flex align-items-center">
+                  <li className="nav-item mx-2 my-2 d-flex align-items-center">
                     <span className="text-muted me-2">
                       Welcome, {user.username}!
                     </span>
                   </li>
-                  <li className="nav-item mx-2">
+                  <li className="nav-item mx-2 my-2">
                     <button className="btn btn-outline-danger" onClick={handleLogout}>
                       Logout
                     </button>
                   </li>
                 </>
               ) : (
-                <li className="nav-item mx-2">
+                <li className="nav-item mx-2 my-2">
                   <button 
                     className="btn btn-outline-primary" 
                     onClick={() => {
