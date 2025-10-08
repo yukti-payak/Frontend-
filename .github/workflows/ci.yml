@@ -1,0 +1,41 @@
+# .github/workflows/ci.yml
+
+name: CI Pipeline
+
+# Run on pushes to the main branch and on pull requests
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Get the code from the repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Set up the Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install all project dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. Run the linter to check for code style issues
+      - name: Run Linter
+        run: npm run lint
+
+      # 5. Run all unit tests (including the one for Hero.jsx)
+      - name: Run Tests
+        run: npm test
+
+      # 6. Create a production build to ensure it builds without errors
+      - name: Build Project
+        run: npm run build
