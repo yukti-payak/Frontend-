@@ -78,7 +78,7 @@ function Footer() {
         </div>
         <div className="mt-3 p-5 company-info">
           <p className="para">
-            Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
+            Zerodha Broking Ltd.: Member of NSE, BSE & MCX – SEBI Registration
             no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
             Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity
             Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001
@@ -102,7 +102,7 @@ function Footer() {
             with your stock broker / depository participant and receive OTP
             directly from depository on your e-mail and/or mobile number to
             create pledge. 3) Check your securities / MF / bonds in the
-            consolidated account statement issued by NSDL/CDSL every month.{" "}
+            consolidated account statement issued by NSDL/CDSL every month.
             <br />
             "Prevent unauthorised transactions in your account. Update your
             mobile numbers/email IDs with your stock brokers. Receive
@@ -111,7 +111,6 @@ function Footer() {
             investors. KYC is one time exercise while dealing in securities
             markets - once KYC is done through a SEBI registered intermediary
             (broker, DP, Mutual Fund etc.), you need not undergo the same
-
             process again when you approach another intermediary." Dear
             Investor, if you are subscribing to an IPO, there is no need to
             issue a cheque. Please write the Bank account number and sign the
