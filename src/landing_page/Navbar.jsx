@@ -16,13 +16,13 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
     username: "" 
   });
 
-  // Check for token on component mount and when storage changes
+  
   useEffect(() => {
     const checkAuth = async () => {
       const storedToken = localStorage.getItem("token");
       if (storedToken) {
         setToken(storedToken);
-        // Verify token and get user info
+       
         try {
           const response = await axios.get(`${API_BASE}/api/auth/me`, {
             headers: { Authorization: `Bearer ${storedToken}` }
@@ -30,7 +30,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
           setUser(response.data.user);
         } catch (error) {
           console.error("Token verification failed:", error);
-          // Invalid token, remove it
+  
           localStorage.removeItem("token");
           setToken(null);
           setUser(null);
@@ -40,7 +40,6 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
 
     checkAuth();
 
-    // Listen for storage changes (logout from another tab)
     const handleStorageChange = (e) => {
       if (e.key === "token") {
         if (e.newValue) {
@@ -123,7 +122,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
             <img style={{ width: "150px" }} alt="logo" src="/media/images/logo1.svg"/>
           </Link>
 
-          {/* Hamburger Toggle Button for Mobile */}
+      
           <button 
             className="navbar-toggler" 
             type="button" 
@@ -188,7 +187,7 @@ function Navbar({ showForm, setShowForm, formType, setFormType }) {
         </div>
       </nav>
 
-      {/* Login/Signup Modal */}
+
       {showForm && (
         <div
           style={{
